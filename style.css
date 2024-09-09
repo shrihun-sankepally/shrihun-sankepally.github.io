@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --forest: #0F0C15;
+}
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+h1,h2 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 25vw;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.5rem;
+    padding: 2.5rem;
+}
+
+.titleDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+.row-elem {
+    margin: 0.25rem;
+}
+
+#title {
+    font-size: 4rem;
+}
+
+.section {
+    background-color: var(--forest);
+    padding: 1.2rem 0;
+}
+
+.work-title {
+    text-align: center;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid var(--forest);
+    font-size: 1.4rem;
+    background-color: var(--forest);
+    transition-duration: 0.2s;
+    text-align: center;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--forest);
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0, .4)),
+    url('./images/header3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.work-box  {
+    display: flex;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.card {
+    width: 25vw; /* Increase the width to a more reasonable size */
+    background-color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.2);
+    /* Remove margin here as we're using gap in the container */
+}
+
+.section-header {
+    padding: 1.5rem;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.card-content a {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content a img {
+    align-self: center;
+    height: 100%;
+    width: auto;
+    margin-left: 0.5rem;
+    object-fit: contain;
+}
+
+.card-content p,li {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.card-content li {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.section {}
+
+
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
