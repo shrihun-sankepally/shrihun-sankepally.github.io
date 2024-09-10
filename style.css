@@ -126,6 +126,22 @@ header {
     border-radius: 1rem;
 }
 
+.contact-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 75vw;
+    background-color: black;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .card {
     width: 25vw;
     background-color: black;
@@ -154,7 +170,7 @@ header {
     max-width: 100%;
 }
 
-.about-me-card-content {
+.about-me-card-content, .contact-card p {
     padding: 1.5rem;
 }
 
@@ -177,7 +193,18 @@ header {
 
 .about-me-card-content a {
     margin-top: 1rem;
+}
 
+.contact-card a {
+    margin: 1rem;
+    display: flex;
+    width: 25%;
+}
+
+.contact-card a {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 .card-content a img {
@@ -198,8 +225,29 @@ header {
     margin-top: 1rem;
 }
 
-.section {}
+.footer {
+    text-align: center;
+}
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    list-style: none;
+}
+
+.social-image {
+    height: 4rem;
+}
+
+
+@media (max-width: 1200px) {
+    .about-me-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -208,9 +256,7 @@ header {
         align-items: center;
     }
 
-    .about-me-card {
-        flex-direction: column;
-    }
+
 
     .card {
         width: 90%;
