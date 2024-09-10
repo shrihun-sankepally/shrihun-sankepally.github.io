@@ -14,6 +14,10 @@ body {
     font-size: 1.25rem;
 }
 
+#title-btn {
+    margin-top: 0.5rem;
+}
+
 h1,h2 {
     font-weight: 400;
 }
@@ -66,7 +70,7 @@ nav {
 
 .section {
     background-color: var(--forest);
-    padding: 1.2rem 0;
+    padding: 2rem;
 }
 
 .work-title {
@@ -92,8 +96,8 @@ nav {
 
 header {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0, .4)),
-    url('./images/header3.png');
+    background:
+    url('./images/header5.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -143,7 +147,7 @@ header {
 }
 
 .card {
-    width: 25vw;
+    width: 20vw;
     background-color: black;
     border-radius: 1rem;
     overflow: hidden;
@@ -175,11 +179,11 @@ header {
 }
 
 .card-content {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .card-content h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     color: white;
 }
@@ -250,7 +254,7 @@ header {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .card-container {
         flex-direction: column;
         align-items: center;
