@@ -34,6 +34,7 @@ a {
     color: white;
     padding: 5px;
     text-decoration: none;
+    transition-duration: 0.2s;
 }
 
 header {
@@ -170,8 +171,12 @@ header {
     object-fit: cover;
 }
 
+.proj-image {
+    background-color: white;
+}
+
 .about-me-card img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .about-me-card-content, .contact-card p {
@@ -180,6 +185,12 @@ header {
 
 .card-content {
     padding: 2rem;
+}
+
+
+
+a:hover {
+    color: gray;
 }
 
 .card-content h3 {
@@ -193,6 +204,14 @@ header {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+
+
+.card-content p a {
+    display: inline;
+    margin-right: -4px;
+    margin-left: -4px;
 }
 
 .about-me-card-content a {
